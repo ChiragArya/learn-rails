@@ -1,6 +1,22 @@
 source 'https://rubygems.org'
 
 
+# Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
+gem 'figaro'
+# Gibbon is an API wrapper for MailChimp's API.
+gem 'gibbon' #Please install Gibbon 1.2.0 if you need to use API 2.0.
+# This is a Ruby library to read/write files/spreadsheets in Google Drive/Docs.
+gem 'google_drive'
+# Rails engine for static pages.
+gem 'high_voltage'
+# for better designing of forms
+gem 'simple_form'
+# responsive front-end framework
+gem 'zurb-foundation'
+#Compass rails is an adapter for the Compass Stylesheet Authoring Framework for Ruby on Rails.
+gem 'compass-rails'
+#  supports relations and nested attributes.
+gem 'activerecord-tableless'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
@@ -41,5 +57,15 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  #Better Errors replaces the standard Rails error page with a much better and more useful error page. It is also usable outside of Rails in any Rack app as Rack middleware.
+  gem 'better_errors'
+
+  #Quiet Assets turns off the Rails asset pipeline log. This means that it suppresses messages in your development log.
+  gem 'quiet_assets'
+
+  #Use this gem to set up layout files for your choice of front-end framework: Zurb, Bootstrap.
+  gem 'rails_layout'
+
 end
 
